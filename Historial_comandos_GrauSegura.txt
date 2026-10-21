@@ -1,0 +1,271 @@
+clear
+history
+clear
+ls
+cd repogit/
+git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
+./UTN-FRA_SO_Examenes/script_Precondicion.sh
+sudo chmod 777 UTN-FRA_SO_Examenes/script_Precondicion.sh 
+eho $?
+echo $?
+./UTN-FRA_SO_Examenes/script_Precondicion.sh
+source  ~/.bashrc  && history -a
+echo $?
+clear
+git clone https://github.com/lisandro070/Recu_TP_AySO.git
+cd Recu_TP_AySO/
+ls -l
+cat << quit >> README.md 
+Alumno: Lisandro Grau Segura
+División: 111
+Turno: Noche
+quit
+
+sudo mkdir -p /datos/{apps/app{5..10},textos/{libros,papers,revistas},videos/{documentales,peliculas,series}}
+echo $?
+tree /datos/
+apt install tree
+sudo apt install tree
+tree /datos/
+clear
+cat << quit > Punto_A.sh
+sudo mkdir -p /datos/{apps/app{5..10},textos/{libros,papers,revistas},videos/{documentales,peliculas,series}}
+quit
+
+history
+chmod 777 Punto_A.sh 
+echo $?
+clear
+git add Punto_A.sh 
+git commit -m "ADD: Añadiendo la resolución del punto A en Punto_A.sh"
+git config --global user.email "graulisandro059@gmail.com"
+git config --global user.name "lisandro070"
+git commit -m "ADD: Añadiendo la resolución del punto A en Punto_A.sh"
+clear
+sudo groupadd p1c1_2026_g1
+echo $?
+sudo useradd -m -G p1c1_2026_g1 p1c1_2026_u1
+echo $?
+sudo passwd p1c1_2026_u1
+sudo chown -R p1c1_2026_u1:p1c1_2026_g1 /datos/
+echo $?
+sudo chmod -R 750 /datos/
+echo $?
+su -c "whoami > /datos/validar1.txt" p1c1_2026_u1
+echo $?
+cat << quit > Punto_B.sh
+sudo groupadd p1c1_2026_g1
+sudo useradd -m -G p1c1_2026_g1 p1c1_2026_u1
+sudo passwd p1c1_2026_u1
+sudo chown -R p1c1_2026_u1:p1c1_2026_g1 /datos/
+sudo chmod -R 750 /datos/
+su -c "whoami > /datos/validar1.txt" p1c1_2026_u1
+quit
+
+cat /datos/validar1.txt
+sudo cat /datos/validar1.txt
+clear
+sudo groupadd p1c1_2026_Todos
+echo $?
+sudo grep p1c1_2026_u1 /etc/shadow
+sudo grep p1c1_2026_u1 /etc/shadow | awk -F ':' '{print $2}'
+sudo useradd -m -g p1c1_2026_Todos -p '$y$j9T$Q2SIHD.ZgpLoH0QIqT3e2.$HNhIwe4kch9IlMq4dEcw1geMQqaaLgqQweGwXgvcRr4' p1c1_2026_u2
+echo $?
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+echo $?
+sudo chown -R :p1c1_2026_Todos /datos/
+echo $?
+sudo chmod -R 770 /datos/
+echo $?
+ls -l /datos/
+sudo ls -l /datos/
+id p1c1_2026_u2 >> /datos/validar.txt
+sudo id p1c1_2026_u2 >> /datos/validar.txt
+su -c "id >> /datos/validar1.txt" p1c1_2026_u2
+echo$?
+su -c "cat /datos/validar1.txt" p1c1_2026_u1
+su -c "cat /datos/validar1.txt" p1c1_2026_u2
+cat /datos/validar1.txt
+ls -l /datos/
+cat << quit > Punto_C.sh
+sudo groupadd p1c1_2026_Todos
+sudo grep p1c1_2026_u1 /etc/shadow | awk -F ':' '{print $2}'
+sudo useradd -m -g p1c1_2026_Todos -p '$y$j9T$Q2SIHD.ZgpLoH0QIqT3e2.$HNhIwe4kch9IlMq4dEcw1geMQqaaLgqQweGwXgvcRr4' p1c1_2026_u2
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+sudo chown -R :p1c1_2026_Todos /datos/
+sudo chmod -R 770 /datos/
+su -c "id >> /datos/validar1.txt" p1c1_2026_u2
+su -c "cat /datos/validar1.txt" p1c1_2026_u1
+su -c "cat /datos/validar1.txt" p1c1_2026_u2
+cat /datos/validar1.txt
+ls -l /datos/
+quit
+
+git status
+git add Punto_B.sh
+git commit -m "ADD: Añadiendo resolución del punto B en Punto_B.sh"
+git add Punto_C.sh 
+git commit -m "ADD: Añadiendo resolución del punto C en Punto_C.sh"
+git status
+cat README.md 
+git add README.md 
+git commit -m "ADD: Añadiendo información de alumno a README.md"
+git status
+clear
+git push
+git remote -v
+git remote set-url origin git@github.com:lisandro070/Recu_TP_AySO.git
+git remote -v
+ssh -T git@github.com
+ls -la ~/.ssh
+ssh-keygen -t ed25519 -C "lisandro070"
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+git status 
+git push
+echo $?
+clear
+cd
+pwd
+mkdir -p Ejercicio_D/{rx/{lotes_{1..20},extras_{1..100}},tx/lotes_{1..20}}
+echo $?
+tree Ejercicio_D/ --noreport | pr -T -s' ' -w 80 --column 4
+cd repogit/Recu_TP_AySO/
+ls -l
+cat << quit > Punto_D.sh
+mkdir -p Ejercicio_D/{rx/{lotes_{1..20},extras_{1..100}},tx/lotes_{1..20}}
+quit
+
+ls
+cd ..
+chmod -R 777 Recu_TP_AySO/
+cd Recu_TP_AySO/
+ls
+git add Punto_B.sh
+git commit -m "ADD: Añadiendo actualización de permisos a Punto_B.sh"
+git add Punto_C.sh 
+git commit -m "ADD: Añadiendo actualización de permisos a Punto_C.sh"
+git add Punto_D.sh 
+git commit -m "ADD: Añadiendo resolución del punto C en Punto_D.sh"
+git status
+git add README.md 
+git commit -m "ADD: Añadiendo información de alumno a README.md"
+git status
+git push
+clear
+git add Punto_D.sh 
+git commit -m "ADD: Añadiendo resolución del punto D en Punto_D.sh"
+git push
+cat << quit > Punto_D.sh 
+mkdir -p Ejercicio_D/{rx/{lotes_{1..20},extras_{1..100}},tx/lotes_{1..20}}
+quit
+
+git add Punto_D.sh
+git commit -m "ADD: Añadiendo resolución del punto D en Punto_D.sh"
+git push
+clear
+cd
+mkdir Punto_E
+ls
+cd Punto_E/
+grep -i 'Mem' /proc/meminfo
+echo -i 'MemTotal' >> Filtro_basico.txt
+cat Filtro_basico.txt 
+grep -i 'MemTotal' /proc/meminfo > Punto_E/Filtro_basico.txt 
+cd Punto_E/
+cat Filtro_basico.txt 
+lscpu
+grep -i 'cpu' /proc/cpuinfo 
+grep -i 'model' /proc/cpuinfo 
+grep -i 'model name' /proc/cpuinfo | tail -n1 >> Filtro_basico.txt 
+cat Filtro_basico.txt 
+grep -i 'cpu MHz' /proc/cpuinfo | tail -n1 >> Filtro_basico.txt
+cat Filtro_basico.txt 
+cd ..
+cd repogit/Recu_TP_AySO/
+cat << quit > Punto_E.sh
+grep -i 'cpu' /proc/cpuinfo
+grep -i 'model' /proc/cpuinfo
+grep -i 'model name' /proc/cpuinfo | tail -n1 >> Filtro_basico.txt
+grep -i 'cpu MHz' /proc/cpuinfo | tail -n1 >> Filtro_basico.txt
+quit
+
+cat Punto_E.sh 
+clear
+git add Punto_E.sh 
+chmod 777 Punto_E.sh 
+git add Punto_E.sh 
+git commit -m "ADD: Añadiendo resolución del punto E en Punto_E.sh"
+git status
+git push
+clear
+cd
+mkdir Punto_F
+cd Punto_F
+curl -s ifconfig.me
+history
+grep -i 'cpu' /proc/cpuinfo
+grep -i 'mode' /proc/cpuinfo
+ls
+ls -l
+echo "Mi ip publica es: $(curl -s ifconfig.me)" > Filtro_Avanzado.txt
+cat Filtro_Avanzado.txt 
+grep -i 'model:' /proc/cpuinfo | tail -n1
+echo $?
+grep -i 'cpu' /proc/cpuinfo
+grep -i 'model' /proc/cpuinfo | tail -n1
+grep -i 'model:' /proc/cpuinfo | head -n1
+man head
+grep -i 'model' /proc/cpuinfo | head -n1
+grep -i 'model' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}'
+grep -i 'cpu mhz' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}'
+echo "CPU Modelo:$(grep -i 'model' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}') Frecuencia:$(grep -i 'cpu mhz' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}')" >> Filtro_Avanzado.txt 
+cat Filtro_Avanzado.txt 
+cd ..
+cd repogit/Recu_TP_AySO/
+cat << quit > Punto_F.sh
+grep -i 'mode' /proc/cpuinfo
+quit
+
+cat << quit > Punto_F.sh 
+curl -s ifconfig.me
+grep -i 'mode' /proc/cpuinfo
+grep -i 'cpu' /proc/cpuinfo
+echo "Mi ip publica es: $(curl -s ifconfig.me)" > Filtro_Avanzado.txt
+echo "CPU Modelo:$(grep -i 'model' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}') Frecuencia:$(grep -i 'cpu mhz' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}')" >> Filtro_Avanzado.txt
+quit
+
+cat Punto_F.sh 
+cat << quit > Punto_F.sh 
+curl -s ifconfig.me
+grep -i 'mode' /proc/cpuinfo
+grep -i 'cpu' /proc/cpuinfo
+'echo "Mi ip publica es: $(curl -s ifconfig.me)" > Filtro_Avanzado.txt'
+'echo "CPU Modelo:$(grep -i 'model' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}') Frecuencia:$(grep -i 'cpu mhz' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}')" >> Filtro_Avanzado.txt'
+quit
+
+cat Punto_F.sh 
+cd
+cd Punto_F/
+cat Filtro_Avanzado.txt 
+cd
+cd repogit/Recu_TP_AySO/
+cat << 'quit' > Punto_F.sh 
+curl -s ifconfig.me
+grep -i 'mode' /proc/cpuinfo
+grep -i 'cpu' /proc/cpuinfo
+echo "Mi ip publica es: $(curl -s ifconfig.me)" > Filtro_Avanzado.txt
+echo "CPU Modelo:$(grep -i 'model' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}') Frecuencia:$(grep -i 'cpu mhz' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}')" >> Filtro_Avanzado.txt
+quit
+
+cat Punto_F.sh 
+chmod 777 Punto_F.sh 
+ls -l
+git add Punto_F.sh 
+git commit -m "ADD: Añadiendo resolución del punto F en Punto_F.sh
+"
+git status
+git push
+clear
+history -a
+$?
